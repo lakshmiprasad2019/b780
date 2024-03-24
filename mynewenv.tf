@@ -16,6 +16,7 @@ resource "aws_subnet" "main" {
   tags = {
     Name = "Public"
   }
+}
 resource "aws_subnet" "private" {
   vpc_id     = aws_vpc.myvpc.id
   cidr_block = "10.10.2.0/24"
